@@ -1,26 +1,23 @@
-import React, { useState } from "react";
-import Tweet from './Tweet';
-
+import React from "react"
+import Footer from "./Footer"
 
 function App() {
-
-  const [isRed, setRed] = useState(false);
-  const [count, setCount] = useState(0);
-
-  const increment = () => {
-    setCount(count + 1);
-    setRed(!isRed);
-  }
-
-
   return (
-    <div className="app">
-      <h1 className={isRed ? 'red' : ''}>Change my colour</h1>
-      <botton onClick={increment}>Increment</botton>
-      <h1>{count}</h1>
-      
-    </div>
-  );
+        <div>
+            <nav>
+              <h1>Hello</h1>
+              <p>Paragraph</p>
+                  <ul>
+                      <li>1</li>
+                      <li>2</li>
+                      <li>3</li>
+                  </ul>
+            </nav>
+            <main>Main Content</main>
+            <Footer />
+        </div>
+)
 }
 
-export default App;
+
+export default App
