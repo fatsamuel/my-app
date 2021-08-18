@@ -5,10 +5,10 @@ import'./App.css';
 function App() {
   return (
     <div className="app">
-      <h1>Hello</h1>
-      <Tweet/>
-      <Tweet/>
-
+      
+      <Tweet name="Hans" message="Hello Hans" likes="5"/>
+      <Tweet name="Jesus" message="Hello Jesus" likes="5"/>
+      <Tweet name="Michael" message="Hello Michael" likes="5"/>
     </div>
   );
 }
