@@ -1,16 +1,17 @@
-import React from "react";
-import Tweet from './Tweet';
-import'./App.css';
+import React from "react"
+import Footer from "./components/Footer"
+import MainContent from "./components/MainContent"
+import Header from "./components/Header"
 
 function App() {
   return (
-    <div className="app">
-      
-      <Tweet name="Hans" message="Hello Hans" likes="5"/>
-      <Tweet name="Jesus" message="Hello Jesus" likes="5"/>
-      <Tweet name="Michael" message="Hello Michael" likes="5"/>
-    </div>
-  );
+        <div>
+            <Header />
+            <MainContent />
+            <Footer />
+        </div>
+)
 }
 
-export default App;
+
+export default App
